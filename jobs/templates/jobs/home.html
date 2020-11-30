@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  {% load staticfiles %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -23,9 +24,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link">linkdIn</a>
-          <a class="nav-item nav-link">Medium</a>
-          <a class="nav-item nav-link">Blog</a>
+          <a class="nav-item nav-link" href="#">linkdIn</a>
+          <a class="nav-item nav-link" href="{% static 'RIZKA PUTRI.pdf' %}">Resume</a>
+          <a class="nav-item nav-link" href="#">Blog</a>
         </div>
       </div>
     </nav>
