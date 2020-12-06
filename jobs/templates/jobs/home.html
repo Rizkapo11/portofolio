@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  {% load staticfiles %}
+  {% load static %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -18,15 +18,15 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand">Rizka Putri </a>
+      <a class="navbar-brand" href="{% url 'home' %}">Rizka Putri </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">linkdIn</a>
-          <a class="nav-item nav-link" href="{% static 'RIZKA PUTRI.pdf' %}">Resume</a>
-          <a class="nav-item nav-link" href="#">Blog</a>
+          <a class="nav-item nav-link" href="https://www.linkedin.com/in/rizka-putri-7381981ba/">linkdIn</a>
+          <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
+          <a class="nav-item nav-link" href="{% url 'allblogs' %}">blog</a>
         </div>
       </div>
     </nav>
@@ -41,7 +41,7 @@
         <p>
           <a class="btn btn-primary my-2">Email Me</a>
         </p>
-        <img/>
+        <img src="{% static 'rizkaa.jpg.' %}" height="300" />
       </div>
     </section>
 
